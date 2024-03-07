@@ -1,0 +1,30 @@
+/*-- Fond d'ecran Batterie pour Jouer -- */
+
+* {
+    background-image: url(drum-set-1839383_1280.jpg);
+    background-size: 1950px;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+    text-shadow: 3px 0 red;
+}
+
+.playButton{
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 900;
+    color: beige;
+    text-shadow:3px 0 beige;
+    border-radius:15px ;
+}
+
+.pressed{
+    box-shadow: 0 3px 4px 0 white;
+    opacity: 0.6;
+}

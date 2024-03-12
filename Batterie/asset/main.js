@@ -3,10 +3,13 @@ let numberOfBatteryButtons = document.querySelectorAll(".playButton").length;
 
 // une boucle pour chaque bouton de batterie 
 for (let index = 0; index < numberOfBatteryButtons; index++) {
+
     // Je les selectionne en solo
     document.querySelectorAll(".playButton")[index];
+
     // J'ajoute un evenement de click a chaque bouton
     addEventListener("click", function () {
+
         // Récupère le contenu HTML du bouton cliqué
         let buttonInnerHtml = this.innerHTML;
 
@@ -19,6 +22,7 @@ for (let index = 0; index < numberOfBatteryButtons; index++) {
 
 // écouteur d'événement pour les touches du clavier
 document.addEventListener("keypress", function (event){
+    
     // je récupère la touche pressée sur le clavier
     makeSound(event.key);
     buttonAnimation(event.key);
@@ -31,35 +35,37 @@ function makeSound(key){
 
         case "w":
         // Charge le son associé à la touche "w"
-        let sound1 = new Audio("sound/MUSCPerc_Caisseclaire1(ID2304)_LS.mp3");
+        let sound1 = new Audio("../sound/MUSCPerc_Caisseclaire1(ID2304)_LS.mp3");
         // Joue le son
         sound1.play();
         break;
 
         case "x":
-        let sound2 = new Audio("sound/MUSCPerc_Caisseclaire7(ID2310)_LS.mp3");
+        let sound2 = new Audio("../sound/MUSCPerc_Caisseclaire7(ID2310)_LS.mp3");
         sound2.play();
         break;
 
         case "c":
-        let sound3 = new Audio("sound/MUSCPerc_Tomgrave3(ID2340)_LS.mp3");
+        let sound3 = new Audio("../sound/MUSCPerc_Tommedium1(ID2333)_LS.mp3");
         sound3.play();
         break;
 
         case "v":
-        let sound4 = new Audio("sound/MUSCPerc_Tomgrave4(ID2341)_LS.mp3");
+        let sound4 = new Audio("../sound/MUSCPerc_Tomgrave3(ID2340)_LS.mp3");
         sound4.play();
         break;
 
         case "b":
-        let sound5 = new Audio("sound/MUSCPerc_Tommedium1(ID2333)_LS.mp3");
+        let sound5 = new Audio("../sound/MUSCPerc_Tomgrave4(ID2341)_LS.mp3");
         sound5.play();
         break;
 
         case "n":
-        let sound6 = new Audio("sound/MUSCPerc_Cymbale40cm4(ID2314)_LS.mp3");
+        let sound6 = new Audio("../sound/MUSCPerc_Cymbale40cm4(ID2314)_LS.mp3");
         sound6.play();
         break;
+        default:
+            alert("Autre touche");
     }
 }
 

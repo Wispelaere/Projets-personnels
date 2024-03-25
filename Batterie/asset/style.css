@@ -3,17 +3,13 @@
 /*-- Fond d'ecran Batterie pour Jouer -- */
 
 
-html,
+
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background-image: url("../image/drum-set-1839383_1280.jpg");
     background-position-x: center;
     background-size: 100%;
-}
-
-body {
     text-align: center;
     font-family: "Rock Salt", cursive;
     font-weight: 400;
